@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f4f0e8">
+  <title>Echo Hollow</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="layout">
+    <section class="machine-area" aria-label="Echo Hollow question machine">
+      <header class="machine-heading">
+        <h1>ECHO HOLLOW</h1>
+        <p>TREE FOR HUMAN CONNECTIONS</p>
+      </header>
+      <p class="button-label">PHYSICAL BUTTON</p>
+      <button id="red-button" class="red-button" aria-label="Press to discover an Echo Hollow question">
+        <span class="button-glint"></span>
+      </button>
+      <p class="outlet-label">PAPER OUTLET</p>
+      <div class="machine-body">
+        <div class="paper-slot"><span></span></div>
+        <article id="paper" class="paper" aria-live="polite">
+          <h2>ECHO HOLLOW</h2>
+          <p class="paper-subtitle">TREE FOR HUMAN CONNECTIONS</p>
+          <div class="paper-rule"></div>
+          <p class="paper-prompt">A QUESTION TO CARRY WITH YOU</p>
+          <p id="paper-question" class="paper-question">Your question will appear here.</p>
+          <p class="paper-note">Take a moment. Think about what<br>this question means to you.</p>
+          <div class="paper-bottom">
+            <p>PAUSE. REFLECT.<br>LEAVE SOMETHING BEHIND.</p>
+            <img src="qr_code.png" alt="Echo Hollow QR code">
+          </div>
+        </article>
+      </div>
+      <p class="instructions" id="instructions">Press the red button to discover a question.</p>
+    </section>
+
+    <section class="question-screen" aria-label="Your Echo Hollow question">
+      <div class="screen-overlay">
+        <p id="screen-question" class="screen-question">Press the red button to discover a question.</p>
+      </div>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
